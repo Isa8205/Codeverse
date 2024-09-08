@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
@@ -22,7 +23,7 @@
         .row {
             place-items: center;
         }
-        .card {
+        .ourservices .card {
             padding: 1em;
             padding-inline: 1em;
             border-left: .5em solid teal;
@@ -45,7 +46,7 @@
         }
     </style>
 
-    <!-- <style>
+    <style>
         * {
             transition: all .15s ease-in-out;
         }
@@ -63,7 +64,7 @@
         }
 
         nav .logo {
-            background: linear-gradient(135deg, #1abc9c, #2ecc71);
+            background: linear-gradient(135deg, #f39c12, #f8c291);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -105,7 +106,7 @@
             position: absolute;
             width: 100%;
             height: 2px;
-            background-color: teal;
+            background: linear-gradient(135deg, #1abc9c, #2ecc71);
             bottom: 0;
             left: 0;
             transform: scaleX(0); /* Initial state: hidden underline */
@@ -122,7 +123,7 @@
         .underline-effect::after {
             transition: transform 0.4s ease-out; /* Transition timing for mouse leave */
         }
-    </style> -->
+    </style>
 </head>
 <body>
     <!-- The navigation bar -->
@@ -151,7 +152,7 @@
 
             <div class="container-fluid">
 
-              <a class="navbar-brand" href="#">Codeverse</a>
+              <a class="navbar-brand logo" href="#">Codeverse</a>
 
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -162,26 +163,28 @@
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link underline-effect" href="#">Link</a>
-                  </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                        <a class="nav-link dropdown-toggle underline-effect" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services <i class="fa fas fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
                   </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link underline-effect" href="#">About Us</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="" class="nav-link underline-effect">Contact Us</a>
+                    </li>
                 </ul>
-                
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                  
+
               </div>
             </div>
           </nav>
@@ -190,25 +193,62 @@
      <!-- The content of the body -->
      <main>
         <section class="row col-12">
-            <div class="ourservices col-md-4 p-2"><div class="card p-1">
-                <h3 class="center"><span>Our</span> Background</h3>
+
+            <div class="ourservices col-md-4 p-2">
+                <div class="card p-1">
+                    <h3 class="center"><span>Our</span> Background</h3>
+        
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ratione facilis velit error, a quis adipisci minima numquam quos voluptas assumenda animi eligendi quo commodi? Laboriosam dicta odit voluptatem veniam!</p>
+                </div>
+            </div>
+
+            <div class="ourservices col-md-4 p-2">
+                <div class="card p-1">
+                    <h3 class="center"><span>Our</span> Mission</h3>
     
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ratione facilis velit error, a quis adipisci minima numquam quos voluptas assumenda animi eligendi quo commodi? Laboriosam dicta odit voluptatem veniam!</p>
-            </div></div>
-            <div class="ourservices col-md-4 p-2"><div class="card p-1">
-                <h3 class="center"><span>Our</span> Mission</h3>
-    
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ratione facilis velit error, a quis adipisci minima numquam quos voluptas assumenda animi eligendi quo commodi? Laboriosam dicta odit voluptatem veniam!</p>
-            </div></div>
-            <div class="ourservices col-md-4 p-2"><div class="card p-1">
-                <h3 class="center"><span>Our</span> Vision</h3>
-    
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ratione facilis velit error, a quis adipisci minima numquam quos voluptas assumenda animi eligendi quo commodi? Laboriosam dicta odit voluptatem veniam!</p>
-            </div></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ratione facilis velit error, a quis adipisci minima numquam quos voluptas assumenda animi eligendi quo commodi? Laboriosam dicta odit voluptatem veniam!</p>
+                </div>
+            </div>
+
+            <div class="ourservices col-md-4 p-2">
+                <div class="card p-1">
+                    <h3 class="center"><span>Our</span> Vision</h3>
+        
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ratione facilis velit error, a quis adipisci minima numquam quos voluptas assumenda animi eligendi quo commodi? Laboriosam dicta odit voluptatem veniam!</p>
+                </div>
+            </div>
+
           </section>
     
+          <!-- Bannner start -->
           <section style="background-color: teal;" class="bg-green text-white text-center p-4">
             <h4>Where your ideas are made a reality</h4>
+          </section>
+          <!-- Banner end -->
+
+          <section class="col-12">
+            <h4>Founders</h4>
+
+            <div class="row col-12 p-2">
+                <div class="col-md-6">
+                    <h5>Derrick Moiben</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum temporibus ducimus aut exercitationem sint quas delectus eaque, dolores unde, quod fuga impedit error, suscipit dolor similique dolorum laudantium. Saepe, ducimus!</p>
+                </div>
+                <div class="col-md-6 bg-white shadow p-0 round">
+                    <img src="{% static 'images/kim.jpg' %}" alt="" class="img-fluid round h-1">
+                </div>
+            </div>
+
+            <div class="col-12 row p-2">
+                <div class="col-md-6 bg-white shadow p-0"   >
+                    <img src="{% static 'images/isa.jpg' %}" alt="" class="img-fluid round h-1">
+                </div>
+                <div class="col-md-6">
+                    <h5>Isaiah Kibet</h5>
+                    
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis perspiciatis inventore doloremque expedita debitis autem deserunt ut ab ratione? Sint fugit deleniti quisquam quo dolorem rerum, placeat cumque nemo similique?</p>
+                </div>
+            </div>
           </section>
      </main>
 </body>
