@@ -44,23 +44,28 @@
         .ourservices h3 > span {
             border-bottom: 3px solid chocolate;
         }
+
+        .founder-details {
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+        }
+
+        .founder-img {
+            max-height: 30em;
+            width: 100%;
+            object-fit: cover;
+        }
     </style>
 
     <style>
-        * {
-            transition: all .15s ease-in-out;
-        }
-        nav {
+
+        header {
             position: fixed;
             top: 0;
-            left: 0;
             right: 0;
-            padding: .5em;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: white;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.524);
+            left: 0;
+            z-index: 100;            
         }
 
         nav .logo {
@@ -68,29 +73,6 @@
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
-        }
-        
-        nav a {
-            text-decoration: none;
-            color: black;
-        }
-
-        nav ul {
-            padding: 0;
-            margin: 0;
-            list-style: none;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 1em;
-        }
-
-        nav ul li {
-            cursor: pointer;
-        }
-
-        nav ul li:nth-child(1):hover + .down-arrow {
-            transform: rotate(1800deg);
         }
 
         .underline-effect {
@@ -128,27 +110,8 @@
 <body>
     <!-- The navigation bar -->
     <header>
-        <!-- <nav>
-            <div class="logo">
-                <a href="#">
-                    <h4>CodeverseTech</h4>
-                </a>
-            </div>
-            <div class="nav-links">
-                <ul>
-                    <li class="underline-effect">Services <i class="fa fas fa-angle-down down-arrow"></i></li>
-                    <li>About</li>
-                    <li>Contact Us</li>
-                </ul>
-            </div>
 
-            <div class="actions">
-                <button class="btn btn-primary btn-sm">Donate</button>
-                <button class="btn btn-primary btn-sm">Join Us</button>
-            </div>
-         </nav> -->
-
-         <nav class="navbar navbar-expand-lg navbar-light bg-white shadow">
+         <nav class="navbar navbar-expand-sm navbar-light bg-white shadow">
 
             <div class="container-fluid">
 
@@ -230,21 +193,21 @@
             <h4>Founders</h4>
 
             <div class="row col-12 p-2">
-                <div class="col-md-6">
-                    <h5>Derrick Moiben</h5>
+                <div class="col-md-6 founder-details">
+                    <h4>Derrick Moiben</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum temporibus ducimus aut exercitationem sint quas delectus eaque, dolores unde, quod fuga impedit error, suscipit dolor similique dolorum laudantium. Saepe, ducimus!</p>
                 </div>
                 <div class="col-md-6 bg-white shadow p-0 round">
-                    <img src="{% static 'images/kim.jpg' %}" alt="" class="img-fluid round h-1">
+                    <img src="{% static 'images/kim.jpg' %}" alt="Derrick Moiben" class="img-fluid round founder-img">
                 </div>
             </div>
 
             <div class="col-12 row p-2">
                 <div class="col-md-6 bg-white shadow p-0"   >
-                    <img src="{% static 'images/isa.jpg' %}" alt="" class="img-fluid round h-1">
+                    <img src="{% static 'images/isa.jpg' %}" alt="Isaiah Kibet" class="img-fluid round founder-img">
                 </div>
-                <div class="col-md-6">
-                    <h5>Isaiah Kibet</h5>
+                <div class="col-md-6 founder-details">
+                    <h4>Isaiah Kibet</h4>
                     
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis perspiciatis inventore doloremque expedita debitis autem deserunt ut ab ratione? Sint fugit deleniti quisquam quo dolorem rerum, placeat cumque nemo similique?</p>
                 </div>
