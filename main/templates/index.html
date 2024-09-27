@@ -36,6 +36,30 @@
         align-items: center;
         gap: 1em;
       }
+
+      /* Styles for the hero image */
+      section.hero {
+        background: url(../static/images/Hero.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        text-align: center;
+        padding: 10em 10em;
+      }
+
+      .hero > div {
+        backdrop-filter: brightness(60%);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .hero-text p {
+        width: 80%;
+      }
     </style>
   </head>
   <body>
@@ -66,19 +90,22 @@
 
     <main>
       <section class="hero">
-        <span class="hero-text">
-          <h1>Innovative Software Solutions</h1>
+        <div>
+          <span class="hero-text">
+            <h1>Innovative Software Solutions</h1>
 
-          <p class="text-align-center">
-            At Codverse Tech our core aim is to ensure we deliver cutting edge
-            software solutions to our clients tailored on their needs. Our team
-            levarages the latest technologies todriveresults and foster growth.
-          </p>
-        </span>
-        <span class="hero-btns d-flex justify-content-center g-1">
-          <button class="btn btn-lg btn-light">Get Started</button>
-          <button class="btn btn-lg btn-outline-light">Learn More</button>
-        </span>
+            <p class="text-align-center p-2">
+              At Codverse Tech our core aim is to ensure we deliver cutting edge
+              software solutions to our clients tailored on their needs. Our
+              team levarages the latest technologies todriveresults and foster
+              growth.
+            </p>
+          </span>
+          <span class="hero-btns d-flex justify-content-center gap-2">
+            <button class="btn btn-lg btn-light">Get Started</button>
+            <button class="btn btn-lg btn-outline-light">Learn More</button>
+          </span>
+        </div>
       </section>
     </main>
   </body>
