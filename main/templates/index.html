@@ -21,12 +21,39 @@
     />
 
     <style>
+      /* General styles */
+      body {
+        padding: 0;
+        margin: 0;
+      }
+
+      main {
+        width: 100vw;
+        box-sizing: content-box;
+        margin-top: 60px;
+      }
+
+      section {
+        padding: 2em 5vw;
+      }
+
+      .no-wrap {
+        text-wrap: nowrap;
+      }
+
       /* Styles for the navbar */
       nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 1em 0.5em;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        z-index: 100;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.645);
       }
 
       nav > .navlinks > ul {
@@ -58,7 +85,7 @@
       }
 
       .hero-text p {
-        width: 80%;
+        padding: 1em 1em;
       }
     </style>
   </head>
@@ -106,6 +133,101 @@
             <button class="btn btn-lg btn-outline-light">Learn More</button>
           </span>
         </div>
+      </section>
+
+      <style>
+        .milestones > ul {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+          gap: 1em;
+          padding: 0;
+          list-style: none;
+        }
+
+        .milestones > ul li p.title {
+          font-size: 30px;
+          font-weight: bold;
+        }
+
+        .milestones > ul li p.text {
+          font-size: 14px;
+        }
+
+        .company-info > .right > img {
+          width: 100%;
+          height: 45em;
+          object-fit: cover;
+        }
+
+        .title {
+          font-size: 42px;
+          font-weight: bold;
+        }
+      </style>
+
+      <section class="company-info row">
+        <div class="left col-md-7">
+          <h3 style="font-size: 42px; font-weight: bold">About CodverseTech</h3>
+
+          <p style="font-size: 18px">
+            CodverseTech is a digital agency founded in 202, dedicated to
+            providing tailored software solutions. Our expert team of experts
+            levarages the latest technologies to drive results and ensure
+            efficiency for our clients.
+          </p>
+
+          <div class="milestones">
+            <ul>
+              <li>
+                <p class="title">100 projects</p>
+                <p class="text">
+                  We have succesfully completed over 50 projects, each tailored
+                  to meet the unique needs of our clients.
+                </p>
+              </li>
+
+              <li>
+                <p class="title">30 team members</p>
+
+                <p class="text">
+                  We have a team of 3o dedicated members who work around the
+                  clock to ensure you recieve only the best. Rest assured that
+                  you are in the right place.
+                </p>
+              </li>
+
+              <li>
+                <p class="title">20 Reviews</p>
+
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                  dolores incidunt libero totam natus autem quod hic
+                  consequuntur at quidem rerum, sint perspiciatis, ratione alias
+                  necessitatibus tempora voluptatibus! Corporis, error?
+                </p>
+              </li>
+
+              <li>
+                <p class="title">Service framework</h3>
+
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores necessitatibus architecto blanditiis labore ut esse!
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="right col-md-5">
+          <img src="../static/images/board.jpeg" alt="" />
+        </div>
+      </section>
+
+      <section class="row">
+        <p class="title no-wrap col-md-6">Our Expert Services</p>
+        <p class="col-md-6">
+          At Codverse Tech, we offer a range of specialized services designed to meet your unique business needs. Our team of experts leverages the latest technologies to deliver innovative solutions that drive results.
+        </p>
       </section>
     </main>
   </body>
