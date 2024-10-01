@@ -105,7 +105,7 @@
           <button
             class="btn-lg btn"
             style="
-              background: linear-gradient(135deg, #2e3192, #1bffff);
+              background: #303C6B;
               color: white;
             "
           >
@@ -162,6 +162,19 @@
         .title {
           font-size: 42px;
           font-weight: bold;
+        }
+
+        .service-card {
+          flex-wrap: wrap;
+          background-color: antiquewhite;
+          border-radius: .5em;
+          padding: .5em 1em;
+        }
+
+        .service-card > img {
+          width: 100%;
+          height: 20em;
+          object-fit: cover;
         }
       </style>
 
@@ -229,11 +242,23 @@
           At Codverse Tech, we offer a range of specialized services designed to meet your unique business needs. Our team of experts leverages the latest technologies to deliver innovative solutions that drive results.
         </p>
 
-        <div class="services-container">
-          <div class="service-card">
-            <img src="" alt="">
-            <p class="title"></p>
-            <p class="text"></p>
+        <div class="services-container row gap-1 d-flex align-items-center justify-content-center">
+          <div class="service-card col-md-4">
+            <img src="../static/images/insight.jpg" alt="" class="img-fluid">
+            <p class="title">UI/ UX Design</p>
+            <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates eveniet vel possimus, est libero sunt.</p>
+          </div>
+
+          <div class="service-card col-md-4">
+            <img src="../static/images/insight.jpg" alt="" class="img-fluid">
+            <p class="title">UI/ UX Design</p>
+            <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates eveniet vel possimus, est libero sunt.</p>
+          </div>
+
+          <div class="service-card col-md-4">
+            <img src="../static/images/insight.jpg" alt="" class="img-fluid">
+            <p class="title">UI/ UX Design</p>
+            <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates eveniet vel possimus, est libero sunt.</p>
           </div>
         </div>
       </section>
