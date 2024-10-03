@@ -1,4 +1,6 @@
-#!/home/kim/Documents/GitHub/Codverse/venv/bin/python3
+#!/bin/sh
+'''exec' "/media/isa/Deon_Black/Users/HP 830 G5/OneDrive/Documents/GitHub/Codeverse/venv/bin/python3" "$0" "$@"
+' '''
 # -*- coding: utf-8 -*-
 import re
 import sys

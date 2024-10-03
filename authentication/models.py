@@ -12,11 +12,11 @@ class Users(AbstractUser):
     user_permissions = models.ManyToManyField(Permission, related_name='customuser_set', blank=True)
 
     def __str__(self):
-        return f"{self.firstname} {self.lastname} - {self.username}"
+        return f"{self.first_name} {self.last_name} - {self.username}"
 
     @property
     def full_name(self):
-        return f"{super.firstname} {self.lastname}"
+        return f"{self.first_name} {self.last_name}"
 
     @property
     def age(self):
